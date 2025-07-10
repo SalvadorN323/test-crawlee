@@ -1,0 +1,43 @@
+=== NBA 2024-2025 Standings Crawl Results ===
+Data scraped at: 2025-07-10T21:16:29.429Z
+Source URL: https://www.basketball-reference.com/
+Total teams found: 30
+
+--- All Teams ---
+1. CLE (Eastern) - F-$ (64) GB: 18 PTS: / DIFF: 
+2. BOS (Eastern) - F-$ (61) GB: 21 PTS: / DIFF: 
+3. NYK (Eastern) - F-$ (51) GB: 31 PTS: / DIFF: 
+4. IND (Eastern) - F-$ (50) GB: 32 PTS: / DIFF: 
+5. MIL (Eastern) - F-$ (48) GB: 34 PTS: / DIFF: 
+6. DET (Eastern) - F-$ (44) GB: 38 PTS: / DIFF: 
+7. ORL (Eastern) - F-$ (41) GB: 41 PTS: / DIFF: 
+8. ATL (Eastern) - F-$ (40) GB: 42 PTS: / DIFF: 
+9. CHI (Eastern) - F-$ (39) GB: 43 PTS: / DIFF: 
+10. MIA (Eastern) - F-$ (37) GB: 45 PTS: / DIFF: 
+11. TOR (Eastern) - F-$ (30) GB: 52 PTS: / DIFF: 
+12. BRK (Eastern) - F-$ (26) GB: 56 PTS: / DIFF: 
+13. PHI (Eastern) - F-$ (24) GB: 58 PTS: / DIFF: 
+14. CHO (Eastern) - F-$ (19) GB: 63 PTS: / DIFF: 
+15. WAS (Eastern) - F-$ (18) GB: 64 PTS: / DIFF: 
+16. OKC (Western) - F-$ (68) GB: 14 PTS: / DIFF: 
+17. HOU (Western) - F-$ (52) GB: 30 PTS: / DIFF: 
+18. LAL (Western) - F-$ (50) GB: 32 PTS: / DIFF: 
+19. DEN (Western) - F-$ (50) GB: 32 PTS: / DIFF: 
+20. LAC (Western) - F-$ (50) GB: 32 PTS: / DIFF: 
+21. MIN (Western) - F-$ (49) GB: 33 PTS: / DIFF: 
+22. GSW (Western) - F-$ (48) GB: 34 PTS: / DIFF: 
+23. MEM (Western) - F-$ (48) GB: 34 PTS: / DIFF: 
+24. SAC (Western) - F-$ (40) GB: 42 PTS: / DIFF: 
+25. DAL (Western) - F-$ (39) GB: 43 PTS: / DIFF: 
+26. PHO (Western) - F-$ (36) GB: 46 PTS: / DIFF: 
+27. POR (Western) - F-$ (36) GB: 46 PTS: / DIFF: 
+28. SAS (Western) - F-$ (34) GB: 48 PTS: / DIFF: 
+29. NOP (Western) - F-$ (21) GB: 61 PTS: / DIFF: 
+30. UTA (Western) - F-$ (17) GB: 65 PTS: / DIFF: 
+
+=== Summary ===
+Total teams: 30
+Eastern Conference teams: 15
+Western Conference teams: 15
+JSON file saved: output/nba-standings-2024-2025.json
+Log file saved: output/crawl-log.txt

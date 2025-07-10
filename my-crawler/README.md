@@ -26,7 +26,27 @@ This setup is useful for replicating and investigating the behavior where links 
 - The log will show how many links are found by the selector on each page.
 - If the glob is not set, you may see many links found but "No links enqueued." (the bug).
 - If the glob is set, you will see links being enqueued and processed (workaround works).
-- The `maxRequestsPerCrawl` setting limits how many requests are processed in total (default in this project: 20).
+- The `maxRequestsPerCrawl` setting limits how many requests are processed in total (default in this project: 5).
+
+---
+
+## www vs non-www and glob behavior
+
+The code now includes four test cases to demonstrate the difference between using www and non-www start URLs, and between using globs and the default glob:
+
+| Start URL                          | Glob used           | Redirect? | Links enqueued? (default glob) | Links enqueued? (`**/comments/**` glob) |
+|-------------------------------------|---------------------|-----------|-------------------------------|-----------------------------------------|
+| https://reddit.com/r/dogs           | no www, with globs  | Yes       | ❌ (not enqueued)              | ✅ (enqueued)                            |
+| https://reddit.com/r/legal          | no www, with globs  | Yes       | ❌ (not enqueued)              | ✅ (enqueued)                            |
+| https://www.reddit.com/r/dogs       | www, default glob   | No        | ✅ (enqueued)                  | ✅ (enqueued)                            |
+| https://www.reddit.com/r/legal      | www, default glob   | No        | ✅ (enqueued)                  | ✅ (enqueued)                            |
+
+- When using a permissive glob (`**/comments/**`), links are enqueued regardless of www.
+- When using the default glob, links are only enqueued if the start URL includes www (no redirect).
+
+### How to see this in action
+- Run the project. The logs will clearly indicate which test is running, which glob is used, and whether links are enqueued for each subreddit and URL variant.
+- This helps you observe the effect of www vs non-www and glob settings on Crawlee's link enqueuing behavior.
 
 ---
 
